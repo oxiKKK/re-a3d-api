@@ -1,0 +1,25 @@
+;
+; a3dapi.def
+;
+; Defines the linker export table for a3dapi.dll's COM server. The four
+; entries expose class activation, unload checks and registry installation
+; through the implementations in a3dclsfc.cpp.
+;
+; Explicit ordinals preserve the DLL's external entry-point numbering.
+; PRIVATE keeps these exports out of the generated import library.
+;
+; The shipped 3.3.677 exports four entry points at ordinal base 2:
+;
+;	(RE) rtl:0x10003680  DllGetClassObject	 @2
+;	(RE) rtl:0x10003720  DllCanUnloadNow	 @3
+;	(RE) rtl:0x10003740  DllRegisterServer	 @4
+;	(RE) rtl:0x10003950  DllUnregisterServer @5
+;
+
+LIBRARY		A3dApi
+
+EXPORTS
+	DllGetClassObject	@2 PRIVATE
+	DllCanUnloadNow		@3 PRIVATE
+	DllRegisterServer	@4 PRIVATE
+	DllUnregisterServer	@5 PRIVATE

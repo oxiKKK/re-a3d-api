@@ -1,0 +1,6 @@
+# Every file in this tree, at any depth.  See .clang-format for why.
+#
+# Understood by clang-format 18 and later; older versions ignore this file and
+# are covered by `DisableFormat: true' in .clang-format instead.
+
+*

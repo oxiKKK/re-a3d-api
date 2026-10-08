@@ -1,0 +1,47 @@
+# Build directories and compiler output.
+/build/
+/build-*/
+/cmake-build-*/
+CMakeUserPresets.json
+.vs/
+*.user
+*.aps
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# Reference DLLs (ref/) and sample media are proprietary; supply them locally.
+/samples/data/*
+!/samples/data/README.md
+
+# Local IDA databases, backups and generated type libraries.
+ref/*.id0
+ref/*.id1
+ref/*.id2
+ref/*.nam
+ref/*.til
+ref/*.i64
+ref/*.idb
+ref/*.bak
+/ida/*.til
+
+# Python bytecode.
+__pycache__/
+*.pyc
+
+# Coverage reports, crash captures and audio output.
+cov*.txt
+/hangs/
+/out/
+/artifacts/
+
+# Local agent files.
+.claude/
+.agents/
+AGENTS.md
+CLAUDE.md
+/docs/llm/

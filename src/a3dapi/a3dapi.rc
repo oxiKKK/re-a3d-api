@@ -1,0 +1,59 @@
+/*------------------------- re-a3d-api, 2026 -------------------------------
+ *
+ * This file is part of re-a3d-api, a historical and archival reconstruction
+ * of Aureal A3D. It is maintained to preserve and study the behavior,
+ * interfaces, and implementation of the original software.
+ *
+ *---------------------------------------------------------------------------
+ *
+ * a3dapi.rc
+ *
+ * Defines the Windows version resource embedded in a3dapi.dll, including
+ * numeric versions, build flags and the product and company strings shown
+ * by file-property tools and read by compatibility checks.
+ *
+ * Original 3.3.677 version resource. Vendor checks require the original
+ * CompanyName/ProductName spellings.
+ * Preserve the mismatched string/fixed versions and build flags without strings.
+ * (RE) rtl:flags 0x28, dbg:0x29, dbgv:0x29.
+ *
+ *---------------------------------------------------------------------------
+ */
+
+#include <windows.h>
+#include <winver.h>
+
+VS_VERSION_INFO VERSIONINFO
+	FILEVERSION	3,3,677,0
+	PRODUCTVERSION	3,3,677,0
+	FILEFLAGSMASK	VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+	FILEFLAGS	VS_FF_DEBUG | VS_FF_PRIVATEBUILD | VS_FF_SPECIALBUILD
+#else
+	FILEFLAGS	VS_FF_PRIVATEBUILD | VS_FF_SPECIALBUILD
+#endif
+	FILEOS		VOS__WINDOWS32
+	FILETYPE	VFT_DLL
+	FILESUBTYPE	VFT2_UNKNOWN
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904B0"
+		BEGIN
+			VALUE "CompanyName",		"Aureal Inc.\0"
+			VALUE "FileDescription",	"Aureal A3D API DLL\0"
+			VALUE "FileVersion",		"3.1\0"
+			VALUE "InternalName",		"A3DAPI\0"
+			VALUE "LegalCopyright",		"Copyright \251 1996-2000 Aureal Inc.\0"
+			VALUE "LegalTrademarks",	"Aureal, A3D\0"
+			VALUE "OriginalFilename",	"a3dapi.dll\0"
+			VALUE "ProductName",		"A3D API DLL\0"
+			VALUE "ProductVersion",		"3.1\0"
+		END
+	END
+
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x409, 1200
+	END
+END

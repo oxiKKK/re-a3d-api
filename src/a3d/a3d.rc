@@ -1,0 +1,55 @@
+/*------------------------- re-a3d-api, 2026 -------------------------------
+ *
+ * This file is part of re-a3d-api, a historical and archival reconstruction
+ * of Aureal A3D. It is maintained to preserve and study the behavior,
+ * interfaces, and implementation of the original software.
+ *
+ *---------------------------------------------------------------------------
+ *
+ * a3d.rc
+ *
+ * Defines the Windows version resource embedded in the compatibility
+ * a3d.dll. Its fixed version fields and product strings identify the
+ * library to file-property tools and the main API's vendor checks.
+ *
+ * A3dCheckDriverVersion rejects a system-directory A3D.DLL without readable
+ * version data as A3DVER_FOREIGN, disabling the A3D 1.x fallback.
+ *
+ * Preserve the original mismatch between fixed version 2.9.0.0 and "2.09" strings.
+ *
+ *---------------------------------------------------------------------------
+ */
+
+#include <windows.h>
+
+VS_VERSION_INFO VERSIONINFO
+	FILEVERSION    2,9,0,0
+	PRODUCTVERSION 2,9,0,0
+	FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+	FILEFLAGS      0x0L
+	FILEOS         VOS__WINDOWS32
+	FILETYPE       VFT_DLL
+	FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904B0"
+		BEGIN
+			VALUE "Comments",         "WDM\0"
+			VALUE "CompanyName",      "Aureal Semiconductor\0"
+			VALUE "FileDescription",  "Aureal A3D 1.x DLL\0"
+			VALUE "FileVersion",      "2.09\0"
+			VALUE "InternalName",     "A3D\0"
+			VALUE "LegalCopyright",   "Copyright \251 1996-1999 Aureal Semiconductor\0"
+			VALUE "LegalTrademarks",  "Aureal, A3D, A3D Interactive\0"
+			VALUE "OriginalFilename", "a3d.dll\0"
+			VALUE "ProductName",      "A3D Interactive DLL\0"
+			VALUE "ProductVersion",   "2.09\0"
+		END
+	END
+
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x409, 1200
+	END
+END

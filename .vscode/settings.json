@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    "*.inc": "cpp",
+    "random": "cpp"
+  },
+
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+
+  "[c]": {
+    "editor.formatOnSave": false
+  },
+  "[cpp]": {
+    "editor.formatOnSave": false
+  }
+}

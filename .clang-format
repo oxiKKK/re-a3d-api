@@ -1,0 +1,6 @@
+# Disable automatic formatting and include sorting for this reconstruction.
+# Include order affects GUID definitions and header prerequisites.
+# .clang-format-ignore also excludes the tree for tools that support it.
+
+DisableFormat: true
+SortIncludes: Never

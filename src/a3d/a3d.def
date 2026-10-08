@@ -1,0 +1,20 @@
+;
+; a3d.def
+;
+; Defines the linker export table for the A3D 1.x compatibility DLL.
+; The COM server entries are implemented in a3dclsfc.cpp; A3d.cpp provides
+; the standalone A3dCreate function used by legacy clients.
+;
+; Explicit ordinals and the decorated _A3dCreate@12 name preserve the
+; external entry-point contract. PRIVATE keeps these exports out of the
+; generated import library.
+;
+
+LIBRARY		A3D
+
+EXPORTS
+	DllGetClassObject   @2 PRIVATE
+	DllCanUnloadNow     @3 PRIVATE
+	DllRegisterServer   @4 PRIVATE
+	DllUnregisterServer @5 PRIVATE
+	_A3dCreate@12       @6 PRIVATE
