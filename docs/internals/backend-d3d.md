@@ -69,8 +69,8 @@ See [modern systems](../user/modern-systems.md) for the documented support scope
 
 The software-only recorder excludes hardware-advertising routes. Recorded A2D
 and D2D PCM results leave D3D's driver output and physical DSP behavior
-unverified. The original also has a D3D-buffer destruction failure recorded in
-[backend evidence](../llm/EMULATION.md#d3d-failure-paths). Device initialization
+unverified. The original also has a D3D-buffer destruction failure, recorded in the
+source banners. Device initialization
 retains exception handlers, with a remaining handler-scope qualification in
 the source banner.
 

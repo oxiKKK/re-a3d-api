@@ -27,8 +27,7 @@ track a "percent complete" number.
 - Hit refinement calls both volumetric helpers, but we don't yet know how the
   volume axes get initialized, so volumetric results are incomplete.
 - List base identities and parts of recording behavior are still unknown.
-- Older "missing code" notes may be out of date. Check the source and the
-  [reconstruction records](llm/ARCHITECTURE.md#known-gaps) first.
+- Older "missing code" notes may be out of date. Check the source first.
 
 `A3D_FIXES` turns on runtime-selectable additions and is ON by default. The
 shipped config enables the audio additions and disables the credits additions.
@@ -49,8 +48,7 @@ A passing test only proves what it actually checks:
 | PCM matches the reference | It matches for that scene, format, time window and tolerance only. |
 | A game starts with A3D | Startup worked. Gameplay and effects need their own checks. |
 
-[Test coverage](llm/testing_coverage.md) lists past runs and specific
-regressions. Each result only holds for the revision, devices and settings it
+Each test result only holds for the revision, devices and settings it
 was recorded with. [Testing](development/testing.md) explains how to produce a
 new result, including recording DLL hashes and configuration.
 

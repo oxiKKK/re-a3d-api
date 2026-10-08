@@ -65,7 +65,6 @@ client, understanding the implementation, and verifying changes.
 - [Configuration](reference/configuration.md)
 - [Building](development/building.md), [testing](development/testing.md), [diagnostics](development/diagnostics.md)
 - [Reconstruction method](development/reconstruction-method.md), [maintaining documentation](development/documentation.md)
-- [Binary and source records](llm/README.md)
 
 ## How to interpret claims
 

@@ -38,15 +38,15 @@ This does not make arbitrary private interfaces interchangeable. The retained
 ## Vtable validation
 
 Compare the [SDK declarations](../../inc/ia3dapi.h) with the target binary.
-[Retail](../llm/groundtruth/vtables-rtl.tsv) and
-[Debug](../llm/groundtruth/vtables-dbg.tsv) inventories locate binary tables.
+Retail and Debug vtable inventories, produced by
+[extract_vtables.py](../../tools/analysis/extract_vtables.py), locate binary tables.
 Validate table lengths, slot identities, and argument types separately. A header from a newer SDK can extend beyond the target's actual table
 into a destructor or unrelated data.
 
 Never recover an interface by adding an assumed byte offset in executable
 code. Declare the owning subobject/field at an established offset and width,
 and check the total layout. The compiler-generated
-[layout report](../llm/LAYOUT.md) is separate from public SDK structures.
+layout report is separate from public SDK structures.
 
 ## ABI exceptions applications must know
 

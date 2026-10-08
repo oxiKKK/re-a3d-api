@@ -55,9 +55,9 @@ metadata or command examples. Existing evidence rows can be retained when
 regenerating only the header through the verifier's `result_header` function;
 this does not repeat decompilation or validate the recorded results.
 
-The [record index](../llm/README.md) links class names, source-file attribution,
-layouts, addresses, unknown declarations, and extracted tables. Generated
-reports name their generator. Make changes in the generator and regenerate
+The [analysis tools](../../tools/README.md) generate class names, source-file
+attribution, layouts, addresses, unknown declarations, and extracted tables.
+Generated reports name their generator. Make changes in the generator and regenerate
 the report.
 
 Use source and evidence to resolve conflicts. SDK descriptions sometimes differ

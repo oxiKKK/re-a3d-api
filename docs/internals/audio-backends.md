@@ -56,8 +56,8 @@ See [compatibility extensions](compatibility-extensions.md) for their behavior.
 
 Render preferences disable selected DirectSound acquisition attempts; they
 are translated into resource-manager flags.
-The detailed order, descriptor fields, and bit readers are preserved in
-[the backend evidence record](../llm/EMULATION.md#device-selection).
+The detailed order, descriptor fields, and bit readers are in
+[resman.cpp](../../src/a3dapi/resman.cpp) and its source banners.
 
 ## Buffer behavior
 

@@ -17,9 +17,8 @@ resource manager selects rendering devices and assigns buffers. The sibling
 | Rendering | DAL and buffer pairs, `CHrtfMgr`, mixer/output routines | [audio backends](audio-backends.md), [software renderer](software-renderer.md) |
 | Legacy DirectSound mapper | `CA3dMapper` | [apimapper.cpp](../../src/a3dapi/apimapper.cpp) |
 
-The [file map](../llm/FILEMAP.md) and [class map](../llm/CLASSMAP.md) give exhaustive
-source attribution. Layout and address records are linked from
-[binary records](../llm/README.md).
+Source banners give per-function attribution. The [analysis tools](../../tools/README.md)
+generate the file map, class map, layout and address reports.
 
 ## Root and interfaces
 
@@ -63,4 +62,4 @@ code can violate its ABI, timing, or observable failure behavior.
 
 Use [COM/ABI](com-and-abi.md) for binary contracts and [status](../status.md) for
 unresolved implementation work. The detailed 677 locators remain in source
-banners and [the architecture record](../llm/ARCHITECTURE.md).
+banners.

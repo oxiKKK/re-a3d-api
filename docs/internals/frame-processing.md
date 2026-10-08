@@ -62,5 +62,4 @@ The tracing implementation uses reconstructed matrix and fast-math helpers.
 changes numerical results. It uses `VERIFY` so the call survives a Release
 build. The original x87 arithmetic and state transitions matter to PCM parity.
 
-Detailed entry addresses are in [the frame record](../llm/ARCHITECTURE.md#frame-update)
-and source banners. Remaining traversal gaps are in [status](../status.md).
+Detailed entry addresses are in the source banners. Remaining traversal gaps are in [status](../status.md).

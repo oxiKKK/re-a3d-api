@@ -85,8 +85,7 @@ asymmetry provide basic output checks; acoustic quality needs further measuremen
 Keep the commit/dirty state, build/runtime settings, DLL hashes, command, input asset, environment,
 test output, and capture manifest. Put transient logs/captures in ignored
 `artifacts/`. Record lasting coverage and limitations
-in [the coverage record](../llm/testing_coverage.md) without duplicating a session
-chronology across pages.
+in [status](../status.md) without duplicating a session chronology across pages.
 
 Source citation counts measure annotation coverage. They must not be reported
 as functional completeness or test coverage. Existing failures and untested

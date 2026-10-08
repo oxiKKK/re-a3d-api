@@ -51,9 +51,8 @@ attempts, as described in [Audio backends](audio-backends.md#acquisition-sequenc
 
 `W95` identifies this acquisition route. The COM registration determines the
 actual provider. Its required DAL support must be established for the installed
-server; the presence of a DLL named `a3d.dll` alone is insufficient. The code is
-in [resman.cpp](../../src/a3dapi/resman.cpp), and the recorded acquisition
-evidence is in [backend evidence](../llm/EMULATION.md#device-selection).
+server; the presence of a DLL named `a3d.dll` alone is insufficient. The code and its
+acquisition evidence are in [resman.cpp](../../src/a3dapi/resman.cpp).
 
 ## Rendering and operational limits
 

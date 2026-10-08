@@ -15,9 +15,8 @@ The inspected `quake3.exe` has SHA-256
 `2c0dd4d06e3282e0abc41ebc8e84e2d9868a17182ac175b232a9bb604a8269a3`.
 It creates `IA3d4`, initializes with feature mask `0x42`, and checks
 `GetHardwareCaps().dwFlags & 0x28`. The emulation configuration lets the software
-device satisfy this historical gate. The call-site evidence and measured
-regression details are in [the backend record](../llm/EMULATION.md#quake-iii-capability-gate)
-and [coverage record](../llm/testing_coverage.md#q3-emulation-validation).
+device satisfy this historical gate. The call-site evidence is in the
+emulation source banners.
 
 Build the [game configuration](getting-started.md), then preserve any existing
 `a3dapi.dll` and copy `build-game/Release/a3dapi.dll` beside this executable.

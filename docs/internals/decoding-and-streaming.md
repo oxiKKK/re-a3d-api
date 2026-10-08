@@ -84,5 +84,5 @@ for the rest of the reconstruction or the reference binaries.
 
 Decoder integration tests use the supplied MP3/AC-3 fixtures. They do not
 compare decoded PCM against Aureal's proprietary codecs. Interface addresses,
-adapter methods, and unresolved signatures are preserved in
-[the decoder record](../llm/DECODERS.md).
+adapter methods, and unresolved signatures are recorded in the decoder
+source banners.

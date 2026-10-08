@@ -45,8 +45,7 @@ module. The newer DLL maintains its own private interface header.
 
 This reference does not contain the same Debug assertion/trace/link-table
 evidence as the API's 677 Debug build. Filename attribution is inferred from
-other evidence. [FILEMAP-A3D](../llm/FILEMAP-A3D.md) records boundaries and
-uncertainties.
+other evidence, and some file boundaries remain uncertain.
 
 Always include `a3d.dll` with a binary address because both reference modules
 use imagebase `0x10000000`. Each address identifies a location within its

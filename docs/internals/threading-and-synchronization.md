@@ -12,7 +12,7 @@ the order expected by the workers.
 | `StreamingCallback` | Ordinary source streaming | Refill decoded/sample data |
 | `Ac3FilterGraph::EventThreadProc` | DirectShow source | Consume graph events |
 
-The [thread record](../llm/ARCHITECTURE.md#threads) gives entry addresses.
+Entry addresses are in the source banners.
 Implementations are in the resource manager, backend, source, and graph files.
 
 ## Independent schedules
