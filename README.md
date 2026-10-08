@@ -1,4 +1,4 @@
-# A3D reconstruction
+# A3D reconstruction <img src="assets/a3dlogo.png" width="120" align="right">
 
 C++ reconstruction of Aureal's **A3D API 3.3.677.0** (`a3dapi.dll`) and its
 A3D 1.x compatibility library (`a3d.dll`). It includes the COM interfaces,
