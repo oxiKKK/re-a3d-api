@@ -1,8 +1,6 @@
 # Reference binaries
 
-These DLLs are used by the tests and binary analysis tools. They are Aureal's
-proprietary binaries and are not distributed with this repository. Place your
-own copies here under these names; the MD5 sums identify the expected builds.
+These tracked DLLs are used by the tests and binary analysis tools.
 
 | file | size | what it is |
 | --- | --- | --- |

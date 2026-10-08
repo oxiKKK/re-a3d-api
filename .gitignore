@@ -14,9 +14,12 @@ CMakeUserPresets.json
 *.pdb
 *.ilk
 
-# Reference DLLs (ref/) and sample media are proprietary; supply them locally.
-/samples/data/*
-!/samples/data/README.md
+# Reference DLLs required by tests and analysis.
+!ref/a3dapi_33_rtl.dll
+!ref/a3dapi_33_dbg.dll
+!ref/a3dapi_33_dbgv.dll
+!ref/a3dapi_33_678.dll
+!ref/a3d_orig.dll
 
 # Local IDA databases, backups and generated type libraries.
 ref/*.id0

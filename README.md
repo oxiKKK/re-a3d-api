@@ -42,7 +42,7 @@ implementation details, and the public API reference.
 | `src/a3d/` | A3D 1.x compatibility library |
 | `inc/` | Original SDK headers |
 | `tests/`, `tools/`, `samples/` | Tests, developer tools and sample applications |
-| `ref/` | Reference binaries (not distributed; see [ref/README.md](ref/README.md)) |
+| `ref/` | Reference binaries |
 | `artifacts/` | Ignored captures, logs and dumps |
 
 - [A3D overview](docs/overview.md): concepts and application flow.

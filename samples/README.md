@@ -19,8 +19,7 @@ Seven original programs from the A3D 3.0 SDK, plus the project-added
 
 Samples build by default with the [root build commands](../README.md#build).
 Media files are copied beside the executables. MP3 and AC-3 playback requires
-[decoder support](../third_party/README.md). The media files are not
-distributed; see [data/README.md](data/README.md).
+[decoder support](../third_party/README.md).
 
 Two programs need additional SDK files:
 

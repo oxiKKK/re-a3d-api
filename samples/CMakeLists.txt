@@ -171,11 +171,6 @@ set(A3D_SAMPLE_MEDIA
 	Scooter.mp3 Spoken_Chan1.ac3)
 
 foreach(media ${A3D_SAMPLE_MEDIA})
-	# The media are not distributed; copy only what has been supplied.
-	if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/data/${media}")
-		message(STATUS "samples: data/${media} not present, not copied")
-		continue()
-	endif()
 	add_custom_command(TARGET polygon POST_BUILD
 		COMMAND ${CMAKE_COMMAND} -E copy_if_different
 			"${CMAKE_CURRENT_SOURCE_DIR}/data/${media}"

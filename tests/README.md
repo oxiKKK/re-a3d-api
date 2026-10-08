@@ -74,5 +74,5 @@ and WAV files hold the measurements. Captures have a 30-second deadline;
 the parent allows 35 seconds. See [capture tools](../tools/README.md#capture-output).
 
 Record the commit, build options and full output with a reported result.
-Comparison tests need the reference DLLs in `ref/` and the media files in
-`samples/data/`; neither is distributed with this repository.
+Comparison tests read the reference DLLs in `ref/` and the media files in
+`samples/data/`.
